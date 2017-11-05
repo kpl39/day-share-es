@@ -1,0 +1,20 @@
+{
+  "name": "dayshare-es",
+  "version": "1.0.0",
+  "description": "elastic search api for dayshare",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Linhardt",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "elasticsearch": "^13.3.1",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "lodash": "^4.17.4",
+    "request": "^2.83.0"
+  }
+}
