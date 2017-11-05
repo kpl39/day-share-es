@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var promise = require('bluebird');
 var request = require('request');
 var query = require('./queries/exports');
+var cors = require('cors');
 
 var PORT;
 
@@ -15,7 +16,7 @@ if (process.env.PORT) {
 	PORT = 3000;
 }
 
-
+app.use(cors())
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(express.static(__dirname));
 
