@@ -11,8 +11,8 @@ function searchParents(req, res, next) {
 
 
   client.search({  
-    index: 'geopoints',
-    type: 'coords',
+    index: 'dayshare',
+    type: 'parents',
     body: {
       query: {
       	bool: {
