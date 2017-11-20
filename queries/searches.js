@@ -62,7 +62,12 @@ function searchParents(req, res, next) {
 };
 
 function test(req, res, next) {
-  respondWithData(req, 'testing')
+  console.log("Reaching test fn");
+  res.status(200)
+        .jsonp({
+          status: 'success',
+          message: 'test works'
+        });
 }
 
 
