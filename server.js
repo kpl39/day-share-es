@@ -30,8 +30,7 @@ app.use(express.static(__dirname));
 // ****** SEARCHES ***** //
 
 app.post('/api/searchParents', query.searchParents);
-
-
+app.get('/api/test', query.test);
 
 
 

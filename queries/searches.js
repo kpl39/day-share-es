@@ -61,7 +61,14 @@ function searchParents(req, res, next) {
   // });
 };
 
+function test(req, res, next) {
+  respondWithData(req, 'testing')
+}
+
 
 module.exports = {
-  searchParents: searchParents
+  searchParents: searchParents,
+  test: test
 };
+
+
